@@ -362,5 +362,87 @@ header {
 
 </section>
 
+<style>
 
+/* ANIMATED DIYA */
+
+.diyaa {
+  font-size: 55px;
+  display: inline-block;
+  animation: diyaGlow 1.5s infinite alternate;
+  filter: drop-shadow(0 0 12px #ffae35);
+}
+
+@keyframes diyaGlow {
+  from {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px #ffae35);
+  }
+
+  to {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 25px #ffd36a);
+  }
+}
+
+/* FLOATING SPARKLES */
+
+.floating-star {
+  position: fixed;
+  bottom: -30px;
+  color: #ffd36a;
+  font-size: 20px;
+  pointer-events: none;
+  z-index: 5;
+  animation: floatUp 7s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 600px) {
+
+  .hero {
+    min-height: 90vh;
+  }
+
+  .logo-area {
+    width: 145px;
+    height: 145px;
+  }
+
+  .logo-text {
+    font-size: 55px;
+  }
+
+  .wishes-section {
+    padding: 65px 15px;
+  }
+
+  .wish-card {
+    padding: 28px 18px;
+  }
+
+}
+
+</style>
   
