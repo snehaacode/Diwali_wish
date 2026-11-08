@@ -123,4 +123,85 @@ header {
   line-height: 1.8;
   }
 
-  
+  /* LOGO AREA */
+
+.logo-area {
+  width: 180px;
+  height: 180px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow:
+    0 0 20px rgba(245,199,106,0.3),
+    inset 0 0 20px rgba(245,199,106,0.15);
+}
+
+.logo-area::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-family: 'Cinzel', serif;
+  font-size: 65px;
+  font-weight: 700;
+  color: var(--gold);
+  text-shadow: 0 0 20px #f5c76a;
+  letter-spacing: -5px;
+}
+
+/* BRAND NAME */
+
+.brand-name {
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  letter-spacing: 5px;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+/* WELCOME TEXT */
+
+.welcome-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(35px, 9vw, 55px);
+  color: #ffe2a0;
+  margin: 15px 0;
+  text-shadow: 0 0 15px #d99b37;
+}
+
+/* CELEBRATION BUTTON */
+
+.celebrate-btn {
+  margin-top: 30px;
+  padding: 15px 32px;
+  border: 1px solid var(--gold);
+  border-radius: 40px;
+  background: linear-gradient(135deg, #f8d78b, #bd812c);
+  color: #350b17;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(245,199,106,0.3);
+  transition: 0.3s;
+}
+
+.celebrate-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 30px #f5c76a;
+}
+
+/* DIWALI DECORATION */
+
+.decoration {
+  font-size: 35px;
+  margin-top: 25px;
+  letter-spacing: 12px;
+  }
